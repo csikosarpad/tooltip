@@ -1,0 +1,53 @@
+article {
+  width: 100%;
+}
+.inline-tooltip {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  color: #88f;
+}
+
+.inline-tooltip.clicked .css-tooltip {
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+.inline-tooltip.clicked .css-tooltip {  
+  max-width: 50%;
+  min-width: 250px;
+  min-width: 150px;
+}
+
+.csstooltip.tooltip-top.clicked .css-tooltip,
+.csstooltip.tooltip-top .inline-tooltip.clicked .css-tooltip {
+  bottom: 25px;
+  left: -15px;
+}
+
+.csstooltip.tooltip-top .inline-tooltip.clicked .css-tooltip:after, 
+.csstooltip.tooltip-top .inline-tooltip.clicked .css-tooltip:before {
+	top: 100%;
+	left: 50%;
+	left: 25px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.csstooltip.tooltip-top .inline-tooltip.clicked .css-tooltip:after {
+	border-color: rgba(226, 226, 226, 0);
+	border-top-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.csstooltip.tooltip-top .inline-tooltip.clicked .css-tooltip:before {
+	border-color: rgba(226, 226, 226, 0);
+	border-top-color: #e2e2e2;
+	border-width: 11px;
+	margin-left: -11px;
+}

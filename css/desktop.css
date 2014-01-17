@@ -1,0 +1,142 @@
+.csstooltip.clicked .css-tooltip,
+.csstooltip.no-hover.clicked .css-tooltip,
+.csstooltip.no-hover.clicked:hover .css-tooltip,
+.csstooltip:hover .css-tooltip {
+  display: block;
+  position: absolute;
+}
+.csstooltip.no-hover:hover .css-tooltip {
+  display: none;
+}
+
+.csstooltip:hover .css-tooltip:after {
+  content: '';
+  display: block;
+}
+
+.inline-tooltip {
+  display: none;
+  font-style: normal;  
+}
+
+.csstooltip.tooltip-top .css-tooltip:after, .csstooltip.tooltip-top .css-tooltip:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.csstooltip.tooltip-top .css-tooltip:after {
+	border-color: rgba(226, 226, 226, 0);
+	border-top-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.csstooltip.tooltip-top .css-tooltip:before {
+	border-color: rgba(226, 226, 226, 0);
+	border-top-color: #e2e2e2;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.csstooltip.tooltip-bottom .css-tooltip:after, .csstooltip.tooltip-bottom .css-tooltip:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.csstooltip.tooltip-bottom .css-tooltip:after {
+	border-color: rgba(226, 226, 226, 0);
+	border-bottom-color: #e2e2e2;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.csstooltip.tooltip-bottom .css-tooltip:before {
+	border-color: rgba(226, 226, 226, 0);
+	border-bottom-color: #e2e2e2;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.csstooltip.tooltip-left .css-tooltip:after, .csstooltip.tooltip-left .css-tooltip:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.csstooltip.tooltip-left .css-tooltip:after {
+	border-color: rgba(226, 226, 226, 0);
+	border-left-color: #E2E2E2;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.csstooltip.tooltip-left .css-tooltip:before {
+	border-color: rgba(226, 226, 226, 0);
+	border-left-color: #E2E2E2;
+	border-width: 11px;
+	margin-top: -11px;
+}
+
+.csstooltip.tooltip-right .css-tooltip:after, .csstooltip.tooltip-right .css-tooltip:before {
+	right: 100%;
+	top: 50%;
+	top: 15px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.csstooltip.tooltip-right .css-tooltip:after {
+	border-color: rgba(226, 226, 226, 0);
+	border-right-color: #fff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.csstooltip.tooltip-right .css-tooltip:before {
+	border-color: rgba(226, 226, 226, 0);
+	border-right-color: #E2E2E2;
+	border-width: 11px;
+	margin-top: -11px;
+}
+
+
+.csstooltip.tooltip-top.clicked .css-tooltip,
+.csstooltip.tooltip-top:hover .css-tooltip {
+  bottom: 25px;
+}
+
+.csstooltip.tooltip-bottom.clicked .css-tooltip,
+.csstooltip.tooltip-bottom:hover .css-tooltip {
+  top: 25px;
+}
+.csstooltip.tooltip-left:hover .css-tooltip {
+  top: 0;
+}
+
+.csstooltip.tooltip-right.clicked .css-tooltip,
+.csstooltip.tooltip-right:hover .css-tooltip {
+  top: 0;
+  right: 20px;
+  left: 102%;
+  max-width: 300px;
+  min-width: 150px;
+  /*min-width: 120%;
+  left: -20%;*/  
+}

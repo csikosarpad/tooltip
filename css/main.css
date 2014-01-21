@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 2013.12.12., 18:02:46
     Author     : arpi
 */
@@ -33,16 +33,17 @@ p {
   margin-bottom: 40px;
 }
 
-
 div.new-line {
   display: block;
   clear: both;
-  background: #ffd;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
+  padding: 3px 5px;
+  background: -webkit-repeating-linear-gradient(top,rgb(242, 245, 247) 0%,rgb(246, 248, 249) 98.9%,rgb(188, 202, 211) 99%);
+  background: repeating-linear-gradient(to bottom,rgb(242, 245, 247) 0%,rgb(246, 248, 249) 98.9%,rgb(188, 202, 211) 99%);
 }
 
 .csstooltip {
-  position: relative;  
+  position: relative;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
@@ -66,14 +67,14 @@ div.new-line {
   z-index: 100;
   /*min-width: 120%;
   left: -20%;*/
-  font-style: normal;    
-  
+  font-style: normal;
+
   animation-delay: 0.2s;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease;
   backface-visibility: hidden;
-  
+
 }
 
 
@@ -81,9 +82,9 @@ div.new-line {
   font-family: 'fontello';
   src: url('../font/fontello.eot?88832902');
   src: url('../font/fontello.eot?88832902#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff?88832902') format('woff'),
-       url('../font/fontello.ttf?88832902') format('truetype'),
-       url('../font/fontello.svg?88832902#fontello') format('svg');
+    url('../font/fontello.woff?88832902') format('woff'),
+    url('../font/fontello.ttf?88832902') format('truetype'),
+    url('../font/fontello.svg?88832902#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -97,36 +98,36 @@ div.new-line {
   }
 }
 */
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-info-circled:before { content: '\e800'; } /* '' */

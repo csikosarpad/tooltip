@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="html5 input demo" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" media="all">
-    <!--link href="css/desktop.css" rel="stylesheet" media="screen, projection">
-    <link href="css/handheld.css" rel="stylesheet" media="handheld"-->
     <link rel="stylesheet" media="(min-width: 980px)" href="css/desktop.css" />
     <link rel="stylesheet" media="(min-width: 768px) and (max-width: 979px)" href="css/handheld.css" />
     <link rel="stylesheet" media="(max-width: 767px)" href="css/handheld.css" />
@@ -25,43 +23,33 @@
   <body>
     <h1>HTML5 - css3 - tooltip</h1>
     <article>
-      <div class="new-line csstooltip" title="A tooltip title értéke">Tooltip area<i class="inline-tooltip icon-info-circled"></i></div>
-      <div class="new-line csstooltip" data-content="A tooltip data-content értéke <b>A tooltip data-content értéke</b><br >Megvan, hogy kereshettünk volna 57 billió forintot, azaz 264 milliárd dollárt a tőzsdén – írja a The Atlantic. Ehhez nem is kellett volna más, mint 2012 év végén 1000 dollár (217 ezer forint) kezdőtőke és persze az árfolyamok jövőjének részletes ismerete."><i class="inline-tooltip icon-info-circled"></i>Tooltip area</div>
+      <div class="new-line csstooltip" title="Tooltip link title value">Tooltip area<i class="inline-tooltip icon-info-circled"></i></div>
+      <div class="new-line csstooltip" data-content="Tooltip data-content value <b>Tooltip data-content value</b><br >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."><i class="inline-tooltip icon-info-circled"></i>Tooltip area</div>
 
-      <div class="new-line csstooltip" title="A tooltip title értéke"><i class="inline-tooltip icon-info-circled"></i>Tooltip area (top)</div>
+      <div class="new-line csstooltip" title="Tooltip link title value"><i class="inline-tooltip icon-info-circled"></i>Tooltip area (top)</div>
 
-      <!--p><span class="csstooltip left" title="A tooltip title értéke">Tooltip area (left)</span>,
-      <span class="csstooltip right" data-content="A tooltip data-content értéke">Tooltip area (right)</span></p-->
-      
-      <div class="new-line csstooltip" data-content="Ha Önnek más biztosítónál van élő lakásbiztosítása, akkor 10% kedvezményben részesítjük.">
+      <div class="new-line csstooltip" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.">
 
-      <label for="field-2" class="control-label">
-        Van erre az ingatlanra élő lakásbiztosítása?<span>*</span>
-        
-        <span class="help-inline" data-content="Ha Önnek más biztosítónál van élő lakásbiztosítása, akkor 10% kedvezményben részesítjük.">
-        <i class="icon-info-sign" id="nform-info-field-2"></i></span>
-      </label>
-      <i class="inline-tooltip icon-info-circled"></i>
+        <label for="field-2" class="control-label">
+          Have you got Nintendo?
+          <span class="help-inline" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.">
+            <i class="icon-info-sign" id="nform-info-field-2"></i></span>
+        </label>        
 
-      <div class="controls select_1">
-
-
-      <span class="sel"><select required="required" tabindex="100" name="nform[values][van_e]" id="field-2">
-      <option selected="selected" value="">Kérem válasszon!</option>
-      <option value="n">nincs</option>
-      <option value="c">igen, a CIG Pannónia Biztosítónál</option>
-      <option value="i">igen, egyéb biztosítónál</option>
-      </select></span>
-
+        <select required="required" tabindex="100" name="nform[values][van_e]" id="field-2">
+          <option selected="selected" value="">Please select</option>
+          <option value="0">none</option>
+          <option value="y">Yes, I have</option>
+          <option value="n">No, I haven't</option>
+        </select>
+        <i class="inline-tooltip icon-info-circled"></i>
 
       </div>
-      
-      </div>      
-      <div class="new-line csstooltip" title="A tooltip title értéke">Tooltip area<i class="inline-tooltip icon-info-circled"></i></div>
-      <div class="new-line csstooltip" data-content="A tooltip data-content értéke <b>A tooltip data-content értéke</b><br >Megvan, hogy kereshettünk volna 57 billió forintot, azaz 264 milliárd dollárt a tőzsdén – írja a The Atlantic. Ehhez nem is kellett volna más, mint 2012 év végén 1000 dollár (217 ezer forint) kezdőtőke és persze az árfolyamok jövőjének részletes ismerete."><i class="inline-tooltip icon-info-circled"></i>Tooltip area</div>
+      <div class="new-line csstooltip" title="Tooltip link title value">Tooltip area<i class="inline-tooltip icon-info-circled"></i></div>
+      <div class="new-line csstooltip" data-content="Tooltip data-content value <b>Tooltip data-content value</b><br >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."><i class="inline-tooltip icon-info-circled"></i>Tooltip area</div>
 
-      <div class="new-line csstooltip" title="A tooltip title értéke"><i class="inline-tooltip icon-info-circled"></i>Tooltip area (top)</div>
-      
+      <div class="new-line csstooltip" title="Tooltip link title value"><i class="inline-tooltip icon-info-circled"></i>Tooltip area (top)</div>
+
     </article>
     <!--select id="anim">
       <option value="flash">flash</option>

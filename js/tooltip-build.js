@@ -1,25 +1,54 @@
+/**
+ *  Project:      CSS3 animated tooltip
+ *  Description:  A simple, css3 animated tooltip
+ *  Author:       Csikós Árpád <arpad.csikos@gmail.com>
+ *  License:      Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0.html>
+ *  Source:       https://github.com/csikosarpad/tooltip
+ *
+ *  Usage:        
+      $('.csstooltip').cssTooltip({
+        pos       : 'right',
+        trigger   : 'hover',
+        animated  : 'fadeInRight'
+      });
+ *      
+ *
+ *
+ */
+
+/**
+ * 
+ * @param {type} opt
+ * @returns {undefined}
+ */
 $.fn.cssTooltip = function(opt) {
   var def = {
-    pos: 'top',
-    trigger: 'hover',
-    animated: false
+    pos       : 'right',
+    trigger   : 'hover',
+    animated  : false
   },
   toolTipId = 0,
-  newStyle = '',
-  title = '',
-  tooltip = {
-    obj: {},
-    windowWidth: $(window).innerWidth(),
-    xPos: 0,
-    yPos: 0,
-    tWidth: 0,
-    correction: 0
+  newStyle  = '',
+  title     = '',
+  tooltip   = {
+    obj         : {},
+    windowWidth : $(window).innerWidth(),
+    xPos        : 0,
+    yPos        : 0,
+    tWidth      : 0,
+    correction  : 0
   },
-  pos = opt.pos || def.pos,
-  trigger = opt.trigger || def.trigger,
-  animated = opt.animated || def.animated;
+  pos       = def.pos,
+  trigger   = def.trigger,
+  animated  = def.animated;
   
-  if ( opt.reset === true ) {
+  if ( typeof opt !== 'undefined' ) {
+    pos       = opt.pos,
+    trigger   = opt.trigger,
+    animated  = opt.animated;    
+  }  
+  
+  if ( typeof opt !== 'undefined' && opt.reset === true ) {
     reset();
   }
   
@@ -107,21 +136,24 @@ $.fn.cssTooltip = function(opt) {
 };
 
 
+/**
+ * 
+ */
 $(document).ready(function() {
-
   cssHover = function() {
     $('.csstooltip').removeClass('tooltip-top tooltip-right tooltip-bottom tooltip-left no-hover');
-
+    
     if ($('.csstooltip .inline-tooltip').css('display') === 'none') {
       $('.csstooltip').cssTooltip({
-        pos: 'right',
-        trigger: 'hover',
-        animated: 'fadeInRight'
+        pos       : 'right',
+        trigger   : 'hover',
+        animated  : 'fadeInRight'
       });
     } else {
       $('.csstooltip').cssTooltip({
-        pos: 'top',
-        trigger: 'click'
+        pos     : 'top',
+        trigger : 'click',
+        animated  : false
       });
     }
   };

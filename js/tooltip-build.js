@@ -62,7 +62,9 @@ $.fn.cssTooltip = function(opt) {
     $('<style type="text/css" id="dynamicStyle" />').appendTo('head');
   }
 
-  $(this).addClass('tooltip-' + pos);
+  if ( pos !== 'undefined' ) {
+    $(this).addClass('tooltip-' + pos);
+  }  
 
   $(this).each(function() {
     toolTipId++;
@@ -147,12 +149,12 @@ $(document).ready(function() {
       $('.csstooltip').cssTooltip({
         pos       : 'right',
         trigger   : 'hover',
-        animated  : 'fadeInRight'
+        animated  : 'pulse'
       });
     } else {
       $('.csstooltip').cssTooltip({
-        pos     : 'top',
-        trigger : 'click',
+        pos       : 'top',
+        trigger   : 'click',
         animated  : false
       });
     }
@@ -164,4 +166,5 @@ $(document).ready(function() {
     $('.csstooltip').cssTooltip({reset: true});
     cssHover();
   });
+  
 });
